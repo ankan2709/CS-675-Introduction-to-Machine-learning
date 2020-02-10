@@ -46,11 +46,11 @@ while(l!= ''):
 m0 = []
 
 for j in range(0,cols,1):
-    m0.append(0.01)  # initilize the mean of each column to 0.001 to counter zero error
+    m0.append(0.01)  # initilize the mean of each column to 0.01 to counter zero error
     
 m1 = []
 for j in range(0,cols,1):
-    m1.append(0.01)
+    m1.append(0.01)  # initilize the mean of each column to 0.01 to counter zero error
     
 for i in range(0,rows,1):
     if (train_labels.get(i) != None and train_labels[i] == 0):
@@ -70,11 +70,11 @@ for j in range(0,cols,1):
 s0 = []
 
 for j in range(0,cols,1):
-    s0.append(0)    # initializing the SD of each of the columns to be 0 
+    s0.append(0)    # initializing the variance of each of the columns to be 0 
     
 s1 = []
 for j in range(0,cols,1):
-    s1.append(0)    # initializing the SD of each of the columns to be 0
+    s1.append(0)    # initializing the variance of each of the columns to be 0
     
 for i in range(0,rows,1):
     if (train_labels.get(i) != None and train_labels[i] == 0):
@@ -90,7 +90,7 @@ for j in range(0,cols,1):
 
 
 
-# classify unlabeled points
+## classify unlabeled points
 
 for i in range(0,rows,1):
     if (train_labels.get(i) == None):
