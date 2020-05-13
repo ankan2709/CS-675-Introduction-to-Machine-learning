@@ -1,4 +1,4 @@
-# CS-675-Introduction-to-Machine-learning
+# CS-675 Machine-learning
 
 
 Datasets:
